@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".EscreverActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnOuvir"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnOuvir"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:drawableTop="@android:drawable/ic_menu_slideshow"
+        android:onClick="btnOuvirClick"
+        android:text="Ouvir"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:drawableTop="@android:drawable/ic_menu_close_clear_cancel"
+        android:onClick="btnLimparClick"
+        android:text="limpar"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toTopOf="@+id/btnValidar"
+        app:layout_constraintEnd_toEndOf="@+id/btnOuvir"
+        app:layout_constraintStart_toStartOf="@+id/btnOuvir"
+        app:layout_constraintTop_toBottomOf="@+id/btnOuvir" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOuvir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnValidar"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:drawableTop="@android:drawable/ic_menu_save"
+        android:onClick="btnValidarClick"
+        android:text="Validar"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnLimpar"
+        app:layout_constraintStart_toStartOf="@+id/btnLimpar"
+        app:layout_constraintTop_toBottomOf="@+id/btnLimpar" />
+
+</android.support.constraint.ConstraintLayout>

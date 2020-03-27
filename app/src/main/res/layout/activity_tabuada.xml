@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tabuada01"
+    tools:context=".TabuadaActivity">
+
+    <ImageView
+        android:id="@+id/img01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/img04"
+        app:layout_constraintEnd_toStartOf="@+id/img02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/img04"
+        app:layout_constraintEnd_toStartOf="@+id/img03"
+        app:layout_constraintStart_toEndOf="@+id/img01"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img03"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/img02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img02"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img04"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/img07"
+        app:layout_constraintEnd_toStartOf="@+id/img02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img01"/>
+
+    <ImageView
+        android:id="@+id/img05"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/img07"
+        app:layout_constraintEnd_toStartOf="@+id/img03"
+        app:layout_constraintStart_toStartOf="@+id/img02"
+        app:layout_constraintTop_toTopOf="@+id/img04"/>
+
+    <ImageView
+        android:id="@+id/img06"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/img05"
+        app:layout_constraintEnd_toEndOf="@+id/img03"
+        app:layout_constraintStart_toStartOf="@+id/img03"
+        app:layout_constraintTop_toTopOf="@+id/img05"/>
+
+    <ImageView
+        android:id="@+id/img07"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img04"
+        app:layout_constraintVertical_bias="0.5"/>
+
+    <ImageView
+        android:id="@+id/img08"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/img07"
+        app:layout_constraintEnd_toStartOf="@+id/img06"
+        app:layout_constraintStart_toStartOf="@+id/img05"
+        app:layout_constraintTop_toTopOf="@+id/img07"/>
+
+    <ImageView
+        android:id="@+id/img09"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#c8ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/img08"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/img06"
+        app:layout_constraintTop_toTopOf="@+id/img08" />
+
+
+</android.support.constraint.ConstraintLayout>

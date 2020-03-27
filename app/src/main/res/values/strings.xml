@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Casinha dos Jogos</string>
+    <string name="background_image">Background Image</string>
+    <string name="animais">Animais</string>
+    <string name="casinha_dos_jogos">Casinha dos Jogos</string>
+    <string name="cores">Cores</string>
+    <string name="tabuada">Tabuada</string>
+    <string name="desenho">Desenho</string>
+    <string name="escrever">Escrever</string>
+    <string name="ouvir_entrada_animais">Ouvir entrada Animais</string>
+    <string name="ouvir_entrada_cores">Ouvir entrada Cores</string>
+    <string name="ouvir_entrada_desenho">Ouvir entrada Desenho</string>
+    <string name="ouvir_entrada_tabuada">Ouvir entrada Tabuada</string>
+    <string name="ouvir_entrada_escrever">Ouvir entrada Escrever</string>
+    <string name="definir_o_nome_de_utilizador">Definir o nome de utilizador</string>
+</resources>

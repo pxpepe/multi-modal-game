@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnAnimais"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="btnAnimaisClick"
+        android:text="@string/animais"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toTopOf="@+id/btnCores"
+        app:layout_constraintEnd_toStartOf="@+id/btnTabuada"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imgAnimais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space02" />
+
+    <TextView
+        android:id="@+id/txtViewMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="15dp"
+        android:text="@string/casinha_dos_jogos"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/space02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space01" />
+
+    <Button
+        android:id="@+id/btnCores"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="btnCoresClick"
+        android:text="@string/cores"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toTopOf="@+id/space03"
+        app:layout_constraintEnd_toEndOf="@+id/btnAnimais"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnAnimais"
+        app:layout_constraintTop_toBottomOf="@+id/btnAnimais" />
+
+    <Button
+        android:id="@+id/btnTabuada"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="btnTabuadaClick"
+        android:text="@string/tabuada"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnimais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnAnimais"
+        app:layout_constraintTop_toTopOf="@+id/btnAnimais" />
+
+    <Button
+        android:id="@+id/btnEscrever"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="btnEscreverClick"
+        android:text="@string/escrever"
+        android:textSize="18sp"
+        android:theme="@style/AppTheme.Button"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCores"
+        app:layout_constraintEnd_toEndOf="@+id/btnTabuada"
+        app:layout_constraintStart_toStartOf="@+id/btnTabuada"
+        app:layout_constraintTop_toTopOf="@+id/btnCores" />
+
+    <ImageView
+        android:id="@+id/imgAnimais"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ouvir_entrada_animais"
+        android:onClick="btnOuvirAnimaisClick"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAnimais"
+        app:layout_constraintEnd_toStartOf="@+id/btnAnimais"
+        app:layout_constraintTop_toTopOf="@+id/btnAnimais"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/listen_icon" />
+
+    <ImageView
+        android:id="@+id/imgCores"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ouvir_entrada_cores"
+        android:onClick="btnOuvirCoresClick"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCores"
+        app:layout_constraintEnd_toStartOf="@+id/btnCores"
+        app:layout_constraintTop_toTopOf="@+id/btnCores"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/listen_icon" />
+
+    <ImageView
+        android:id="@+id/imgTabuada"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ouvir_entrada_tabuada"
+        android:onClick="btnOuvirTabuadaClick"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTabuada"
+        app:layout_constraintEnd_toStartOf="@+id/btnTabuada"
+        app:layout_constraintTop_toTopOf="@+id/btnTabuada"
+        app:srcCompat="@drawable/listen_icon" />
+
+    <ImageView
+        android:id="@+id/imgEscrever"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/ouvir_entrada_escrever"
+        android:onClick="btnOuvirEscreverClick"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEscrever"
+        app:layout_constraintEnd_toStartOf="@+id/btnEscrever"
+        app:layout_constraintTop_toTopOf="@+id/btnEscrever"
+        app:srcCompat="@drawable/listen_icon" />
+
+    <ImageView
+        android:id="@+id/imgChangeName"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/white_circle_drawable"
+        android:contentDescription="@string/definir_o_nome_de_utilizador"
+        android:onClick="btnChangeName"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/mic_icon" />
+
+    <Space
+        android:id="@+id/space01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewMainTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:id="@+id/space02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAnimais"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMainTitle" />
+
+    <Space
+        android:id="@+id/space03"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCores" />
+    " />
+
+</android.support.constraint.ConstraintLayout>
